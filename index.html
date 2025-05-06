@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Güemes Deco</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fafafa; color: #333; }
+    header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 20px; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    header img { height: 40px; }
+    nav { display: flex; flex-wrap: wrap; justify-content: center; }
+    nav a { margin: 5px 10px; text-decoration: none; color: #333; font-weight: bold; }
+    .hero { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 50px 20px; background: #fff; }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    .hero p { font-size: 1.2rem; margin-bottom: 20px; }
+    .hero-buttons a { display: inline-block; margin: 10px 5px; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; }
+    .btn-primary { background: #333; color: #fff; }
+    .btn-secondary { background: #eee; color: #333; }
+    .featured, .nosotros, .contacto { padding: 40px 20px; background: #f9f9f9; text-align: center; }
+    .featured h2, .nosotros h2, .contacto h2 { font-size: 2rem; margin-bottom: 30px; }
+    .products { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; }
+    .product { background: #fff; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); padding: 20px; width: 100%; max-width: 250px; box-sizing: border-box; }
+    .product img { width: 100%; height: auto; border-radius: 5px; }
+    .product h3 { margin: 10px 0 5px; font-size: 1.1rem; }
+    .nosotros p { max-width: 700px; margin: auto; font-size: 1rem; line-height: 1.5; }
+    .contacto a { display: inline-block; margin: 10px; padding: 10px 20px; background: #333; color: #fff; border-radius: 5px; text-decoration: none; font-weight: bold; }
+    footer { text-align: center; padding: 20px; background: #fff; margin-top: 40px; font-size: 0.9rem; color: #777; }
+
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 1.8rem; }
+      .hero p { font-size: 1rem; }
+      .products { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo-guemes-deco.png" alt="Güemes Deco">
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="placard-destacado.png" alt="Placard destacado" style="max-width:300px; margin-bottom: 30px;">
+    <h1>Muebles con estilo para tu hogar</h1>
+    <p>Calidad, diseño y atención personalizada. Envíos en todo el país.</p>
+    <div class="hero-buttons">
+      <a href="#catalogo" class="btn-secondary">Ver Catálogo</a>
+      <a href="https://wa.me/549xxxxxxxxx" class="btn-primary" target="_blank">Consultar por WhatsApp</a>
+    </div>
+  </section>
+
+  <section class="featured" id="catalogo">
+    <h2>Productos destacados</h2>
+    <div class="products">
+      <div class="product">
+        <img src="placard-lugo.jpg" alt="Placard Lugo">
+        <h3>Placard Lugo</h3>
+        <p>120x180 cm - Blanco y roble</p>
+      </div>
+      <div class="product">
+        <img src="mesa-oslo.jpg" alt="Mesa de Comedor Oslo">
+        <h3>Mesa de Comedor Oslo</h3>
+        <p>140x80 cm - Madera clara</p>
+      </div>
+      <div class="product">
+        <img src="tv-tokio.jpg" alt="Mueble de TV Tokio">
+        <h3>Mueble de TV Tokio</h3>
+        <p>150 cm - Blanco y roble</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="nosotros" id="nosotros">
+    <h2>Sobre nosotros</h2>
+    <p>En Güemes Deco llevamos años ofreciendo muebles pensados para la vida real. Nos especializamos en diseños funcionales, modernos y duraderos que se adaptan a cada espacio del hogar. Creemos en la atención personalizada y en la calidad de cada detalle.</p>
+  </section>
+
+  <section class="contacto" id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Querés consultar por un producto o hacer un pedido?</p>
+    <a href="https://wa.me/549xxxxxxxxx" target="_blank">Escribinos por WhatsApp</a>
+    <a href="https://www.facebook.com/guemesdeco" target="_blank">Visitá nuestro Facebook</a>
+  </section>
+
+  <footer>
+    © 2025 Güemes Deco. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
